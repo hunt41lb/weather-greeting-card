@@ -1,0 +1,42 @@
+{
+  "name": "weather-greeting-card",
+  "version": "1.0.0",
+  "description": "A custom Home Assistant Lovelace card that displays a personalized greeting with weather information and customizable stat fields",
+  "keywords": [
+    "home-assistant",
+    "lovelace",
+    "custom-card",
+    "weather",
+    "hacs"
+  ],
+  "author": "hunt41lb",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hunt41lb/weather-greeting-card"
+  },
+  "bugs": {
+    "url": "https://github.com/hunt41lb/weather-greeting-card/issues"
+  },
+  "homepage": "https://github.com/hunt41lb/weather-greeting-card#readme",
+  "main": "dist/weather-greeting-card.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "rollup": "^4.12.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "lit": "^3.1.2"
+  }
+}
